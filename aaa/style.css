@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?famili=Heebo:300display=swap');
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Heboo', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+.bg h3 {
+  white-space: nowrap;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  color: #000;
+  transform: translateX(-470px);
+  transition: transform 5s ease;
+  margin: 0.5em 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 6em;
+  color: #22313f;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-shadow: -0.09em 0 0 #f22613, 0.09em 0 0 #00ffff;
+}
+.bg img {
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg.active h3 {
+  transform: translateX(1020px);
+}
